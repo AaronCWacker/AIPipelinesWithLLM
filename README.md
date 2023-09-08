@@ -1,7 +1,24 @@
 # AI Pipelines with LLM
 Large Language Model Demonstrations built to teach latest SOTA in AI Pipelines as of 9/7/2023
-# AI Pipeline - Wit Courtesy of Llama 7B:
 
+# AI Pair Programming - AI Pipeline Targetd Refactor to Infer Generality
+```
+Modify this function to add two more buttons with a key and label that is unique.  Add to existing one.  Create one with wise quotes, one with funny rhymes, one with medical jokes, one with minnesota humor, one with top funny stories, and one with funny rhymes.  # Function to add witty and humor buttons
+def add_witty_humor_buttons():
+    with st.expander("Wit and Humor 🤣", expanded=True):
+        button_description = "Write ten random adult limericks based on quotes that are tweet length and make you laugh 🎭"
+        button_label = "Generate Limericks 😂"
+        if st.button(button_label):
+            try:
+                StreamLLMChatResponse(button_description)
+            except:
+                st.write('Dr. Llama is asleep.  Starting up now on A10 - please give 5 minutes then retry as KEDA scales up from zero to activate running container(s).')
+```
+
+
+
+
+# AI Pipeline - Wit Courtesy of Llama 7B:
 ```
 # Imports
 import base64
