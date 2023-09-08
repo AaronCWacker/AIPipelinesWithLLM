@@ -1,6 +1,29 @@
 # AI Pipelines with LLM
 Large Language Model Demonstrations built to teach latest SOTA in AI Pipelines as of 9/7/2023
 
+# AI Pair Programming - Debug with a Fresh Spec:
+```
+Fix: TypeError: LayoutsMixin.expander() got an unexpected keyword argument 'help'
+Use this specification to fix it:  Function signature[source]
+st.expander(label, expanded=False)
+
+Parameters
+label (str)
+
+A string to use as the header for the expander. The label can optionally contain Markdown and supports the following elements: Bold, Italics, Strikethroughs, Inline Code, Emojis, and Links.
+
+This also supports:
+
+Emoji shortcodes, such as :+1: and :sunglasses:. For a list of all supported codes, see https://share.streamlit.io/streamlit/emoji-shortcodes.
+LaTeX expressions, by wrapping them in "$" or "$$" (the "$$" must be on their own lines). Supported LaTeX functions are listed at https://katex.org/docs/supported.html.
+Colored text, using the syntax :color[text to be colored], where color needs to be replaced with any of the following supported colors: blue, green, orange, red, violet, gray/grey, rainbow.
+Unsupported elements are unwrapped so only their children (text contents) render. Display unsupported elements as literal characters by backslash-escaping them. E.g. 1\. Not an ordered list.
+
+expanded (bool)
+
+If True, initializes the expander in "expanded" state. Defaults to False (collapsed).
+```
+
 # AI Pair Programming   -   Design for Transparency - Tooltips and Markdown
 ```
 # Imports
