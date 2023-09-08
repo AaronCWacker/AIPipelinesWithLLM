@@ -1,6 +1,29 @@
 # AI Pipelines with LLM
 Large Language Model Demonstrations built to teach latest SOTA in AI Pipelines as of 9/7/2023
 
+
+# AI Pair Programming - Programmatic UI Layout
+```
+use st.columns to make the buttons side by side in layout with small gap.  Use specification below :  Function signature[source]
+st.columns(spec, *, gap="small")
+
+Parameters
+spec (int or iterable of numbers)
+
+Controls the number and width of columns to insert. Can be one of:
+
+An integer that specifies the number of columns. All columns have equal width in this case.
+An iterable of numbers (int or float) that specify the relative width of each column. E.g. [0.7, 0.3] creates two columns where the first one takes up 70% of the available with and the second one takes up 30%. Or [1, 2, 3] creates three columns where the second one is two times the width of the first one, and the third one is three times that width.
+gap ("small", "medium", or "large")
+
+The size of the gap between the columns. Defaults to "small". This argument can only be supplied by keyword.
+
+Returns
+(list of containers)
+
+A list of container objects.
+```
+
 # AI Pair Programming - AI Pipeline Targetd Refactor to Infer Generality
 ```
 Modify this function to add two more buttons with a key and label that is unique.  Add to existing one.  Create one with wise quotes, one with funny rhymes, one with medical jokes, one with minnesota humor, one with top funny stories, and one with funny rhymes.  # Function to add witty and humor buttons
